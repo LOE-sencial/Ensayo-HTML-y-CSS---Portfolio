@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-primario: #021526;
+    --color-secundario: #E2E2B6;
+    --color-terciario: #6EACDA;
+    --color-hover: #03346E;
+
+    --fuente-montserrat: "Montserrat", sans-serif;
+    --fuente-krona: "Krona One", sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+}
+
+.header {
+    padding: 2% 0% 0% 15%;
+}
+
+.header__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link {
+    font-family: var(--fuente-montserrat);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.8% 15%;
+    gap: 82px;
+}
+
+.presentacion_contenido {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion_contenido_titulo {
+    font-size: 2.125rem;
+    font-family: var(--fuente-krona);
+}
+
+.titulo-destacado {
+    color: var(--color-terciario);
+}
+
+.presentacion_contenido_texto {
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+}
+
+.presentacion_enlaces_seccion {
+    display:flex;
+    justify-content: space-between;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.presentacion_enlaces_subtítulo {
+    font-family: var(--fuente-krona);
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--color-secundario);
+}
+
+.presentacion_enlaces_link {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px 0px;
+    border-radius: 8px;
+    border: 2px solid var(--color-terciario);
+    font-family: var(--fuente-montserrat);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-secundario);
+}
+
+.presentacion_enlaces_link:hover {
+    background-color: var(--color-hover, blue);
+}
+
+.presentacion__imagen {
+    width: 50%;
+}
+
+.footer {
+    background-color: var(--color-terciario);
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--color-primario);
+    padding: 20px;
+    width: auto;
+}
+
+/* DISEÑO CELULAR */
+
+@media (max-width: 1200px) {
+
+    .presentacion {
+        background-image: url("../assets/BackgroundCodigos.png");
+        background-repeat: no-repeat;
+        background-position: right 0px top 10cm;
+        background-size: 100% auto;
+    }
+    
+        
+
+    .header {
+        padding: 8% 8% 4% 8%;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+
+    .presentacion {
+        flex-direction: column-reverse;
+        padding: 5% 10%;
+    }
+
+    .presentacion_contenido{
+        width: auto;
+    }
+
+    
+    .presentacion_enlaces_seccion {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+        
+}
+
+
